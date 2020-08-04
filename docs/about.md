@@ -5,4 +5,4 @@ title: About
 
 # About page
 
-This page tells you a little bit about me.
+Emmmmm, this static site is for publishing web games, I guess. More than one.
