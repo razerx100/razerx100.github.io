@@ -2,8 +2,15 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>Blog</title>
-        <link rel="stylesheet" href="/assets/css/styles.css">
+        
+            <link rel="stylesheet" href="/assets/css/styles.css">
+        
+            <link rel="shortcut icon" href="/assets/unity/Space_Shooter/TemplateData/favicon.ico">
+        
+            <link rel="stylesheet" href="/assets/unity/Space_Shooter/TemplateData/style.css">
+        
         <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="razerx100.github.io" />
         <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Blog | razerx100.github.io</title>
@@ -44,30 +51,68 @@
     
         <li>
             <h2>
-                <a href="/2020/08/04/bananas.html">Bananas</a>
+                <a href="/2020/08/04/Space-Shooter.html">Space shooter</a>
             </h2>
-            <p>A banana is an edible fruit – botanically a berry – produced by several kinds
-of large herbaceous flowering plants in the genus Musa.</p>
+            <div id="unity-container" class="unity-desktop">
+    <canvas id="unity-canvas"></canvas>
+    <div id="unity-loading-bar">
+      <div id="unity-logo"></div>
+      <div id="unity-progress-bar-empty">
+        <div id="unity-progress-bar-full"></div>
+      </div>
+    </div>
+    <div id="unity-footer">
+      <div id="unity-webgl-logo"></div>
+      <div id="unity-fullscreen-button"></div>
+      <div id="unity-build-title">Space Shooter</div>
+    </div>
+  </div>
+<script>
+    var buildUrl = "/assets/unity/Space_Shooter/Build";
+    var loaderUrl = buildUrl + "/Space_Shooter_Web.loader.js";
+    var config = {
+      dataUrl: buildUrl + "/Space_Shooter_Web.data",
+      frameworkUrl: buildUrl + "/Space_Shooter_Web.framework.js",
+      codeUrl: buildUrl + "/Space_Shooter_Web.wasm",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "DefaultCompany",
+      productName: "Space Shooter",
+      productVersion: "0.1",
+    };
 
-<p>In some countries, bananas used for cooking may be called “plantains”,
-distinguishing them from dessert bananas. The fruit is variable in size, color,
-and firmness, but is usually elongated and curved, with soft flesh rich in
-starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.</p>
+    var container = document.querySelector("#unity-container");
+    var canvas = document.querySelector("#unity-canvas");
+    var loadingBar = document.querySelector("#unity-loading-bar");
+    var progressBarFull = document.querySelector("#unity-progress-bar-full");
+    var fullscreenButton = document.querySelector("#unity-fullscreen-button");
 
-        </li>
-    
-        <li>
-            <h2>
-                <a href="/2020/08/04/apples.html">Apples</a>
-            </h2>
-            <p>An apple is a sweet, edible fruit produced by an apple tree.</p>
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      container.className = "unity-mobile";
+      config.devicePixelRatio = 1;
+    } else {
+      canvas.style.width = "600px";
+      canvas.style.height = "900px";
+    }
+    loadingBar.style.display = "block";
 
-<p>Apple trees are cultivated worldwide, and are the most widely grown species in
-the genus Malus. The tree originated in Central Asia, where its wild ancestor,
-Malus sieversii, is still found today. Apples have been grown for thousands of
-years in Asia and Europe, and were brought to North America by European
-colonists.</p>
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+      createUnityInstance(canvas, config, (progress) => {
+        progressBarFull.style.width = 100 * progress + "%";
+      }).then((unityInstance) => {
+        loadingBar.style.display = "none";
+        fullscreenButton.onclick = () => {
+          unityInstance.SetFullscreen(1);
+        };
+      }).catch((message) => {
+        alert(message);
+      });
+    };
+    document.body.appendChild(script);
+  </script>
+
+<p>Space Shooter Tutorial on WebGL made with Unity</p>
 
         </li>
     

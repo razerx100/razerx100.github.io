@@ -1,0 +1,9 @@
+- name: main
+  rel: stylesheet
+  link: /assets/css/styles.css
+- name: space_shooter_icon
+  rel: shortcut icon
+  link: /assets/unity/Space_Shooter/TemplateData/favicon.ico
+- name: space_shooter_style
+  rel: stylesheet
+  link: /assets/unity/Space_Shooter/TemplateData/style.css
