@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-06T20:21:43+06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">razerx100.github.io</title><entry><title type="html">Brick breaker 3d</title><link href="http://localhost:4000/2020/08/06/Brick-Breaker-3D.html" rel="alternate" type="text/html" title="Brick breaker 3d" /><published>2020-08-06T00:00:00+06:00</published><updated>2020-08-06T00:00:00+06:00</updated><id>http://localhost:4000/2020/08/06/Brick%20Breaker%203D</id><content type="html" xml:base="http://localhost:4000/2020/08/06/Brick-Breaker-3D.html">&lt;p&gt;My first made unity game Brick Breaker but in 3D
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-07T11:03:44+06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">razerx100.github.io</title><entry><title type="html">Brick breaker 3d</title><link href="http://localhost:4000/2020/08/06/Brick-Breaker-3D.html" rel="alternate" type="text/html" title="Brick breaker 3d" /><published>2020-08-06T00:00:00+06:00</published><updated>2020-08-06T00:00:00+06:00</updated><id>http://localhost:4000/2020/08/06/Brick%20Breaker%203D</id><content type="html" xml:base="http://localhost:4000/2020/08/06/Brick-Breaker-3D.html">&lt;p&gt;My first made unity game Brick Breaker but in 3D, under development. &lt;a class=&quot;link&quot; href=&quot;https://github.com/razerx100/Brick_Breaker/tree/3D&quot;&gt;Repositoy&lt;/a&gt;
 &lt;!--more--&gt;&lt;/p&gt;
 &lt;div id=&quot;unity-container&quot; class=&quot;unity-desktop&quot;&gt;
     &lt;canvas id=&quot;unity-canvas&quot;&gt;&lt;/canvas&gt;
@@ -57,7 +57,7 @@
       });
     };
     document.body.appendChild(script);
-  &lt;/script&gt;</content><author><name>Saikat</name></author><summary type="html">My first made unity game Brick Breaker but in 3D</summary></entry><entry><title type="html">Space shooter</title><link href="http://localhost:4000/2020/08/04/Space-Shooter.html" rel="alternate" type="text/html" title="Space shooter" /><published>2020-08-04T00:00:00+06:00</published><updated>2020-08-04T00:00:00+06:00</updated><id>http://localhost:4000/2020/08/04/Space%20Shooter</id><content type="html" xml:base="http://localhost:4000/2020/08/04/Space-Shooter.html">&lt;p&gt;Space Shooter Tutorial on WebGL made with Unity.
+  &lt;/script&gt;</content><author><name>Saikat</name></author><summary type="html">My first made unity game Brick Breaker but in 3D, under development. Repositoy</summary></entry><entry><title type="html">Space shooter</title><link href="http://localhost:4000/2020/08/04/Space-Shooter.html" rel="alternate" type="text/html" title="Space shooter" /><published>2020-08-04T00:00:00+06:00</published><updated>2020-08-04T00:00:00+06:00</updated><id>http://localhost:4000/2020/08/04/Space%20Shooter</id><content type="html" xml:base="http://localhost:4000/2020/08/04/Space-Shooter.html">&lt;p&gt;Space Shooter Tutorial on WebGL made with Unity. &lt;a class=&quot;link&quot; href=&quot;https://github.com/razerx100/Space_Shooter&quot;&gt;Repositoy&lt;/a&gt;
 &lt;!--more--&gt;&lt;/p&gt;
 &lt;div id=&quot;unity-container&quot; class=&quot;unity-desktop&quot;&gt;
     &lt;canvas id=&quot;unity-canvas&quot;&gt;&lt;/canvas&gt;
@@ -116,4 +116,4 @@
       });
     };
     document.body.appendChild(script);
-  &lt;/script&gt;</content><author><name>Saikat</name></author><summary type="html">Space Shooter Tutorial on WebGL made with Unity.</summary></entry></feed>
+  &lt;/script&gt;</content><author><name>Saikat</name></author><summary type="html">Space Shooter Tutorial on WebGL made with Unity. Repositoy</summary></entry></feed>
