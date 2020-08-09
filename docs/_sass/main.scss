@@ -1,4 +1,4 @@
-.landing_text {
+.blue_text {
     color:cornflowerblue;
 }
 .topnav{
@@ -27,8 +27,18 @@
 .article_format{
     padding: 5px 16px;
 }
-.link {
+.link_post {
     text-decoration: none;
     color: orangered;
     font-style: italic;
+}
+.simple_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: cornflowerblue;
 }

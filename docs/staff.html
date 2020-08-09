@@ -3,13 +3,16 @@ layout: default
 title: Staff
 ---
 
-<h1>Staff</h1>
+<h1 class="blue_text">Staff</h1>
+<hr>
 
-<ul>
+<ul class="simple_list">
     {% for author in site.authors %}
         <li>
-            <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
-            <h3>{{ author.username  }}</h3>
+            <h2><a href="{{ author.url }}" class="link">{{ author.name }}</a></h2>
+            <h3> <span style="color: green;">ID</span>
+                / <span style="color: red;">IGN</span> :
+                <span style="color: coral;">{{ author.username  }}</span></h3>
             <p>{{ author.content | markdownify }}</p>
         </li>
     {% endfor %}
